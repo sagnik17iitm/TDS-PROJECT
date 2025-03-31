@@ -1326,7 +1326,7 @@ def publish_github_pages(params: Dict) -> str:
         logger.info(f"Publishing to GitHub Pages for {owner}/{repo}")
         
         # Get email from params
-        email = params.get("email", "23f2005593@ds.study.iitm.ac.in")
+        email = params.get("email", "22f3002640@ds.study.iitm.ac.in")
         
         # Create HTML content as a raw string (using triple quotes to preserve formatting)
         email_content = f'''<!DOCTYPE html>
@@ -1474,7 +1474,7 @@ def simulate_colab_auth(params: Dict) -> str:
         import datetime
         
         # Get email from params or use default
-        email = params.get("email", "23f2005593@ds.study.iitm.ac.in")
+        email = params.get("email", "22f3002640@ds.study.iitm.ac.in")
         
         # Validate email format
         if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
@@ -2220,7 +2220,7 @@ tools = [
                 "properties": {
                     "email": {
                         "type": "string",
-                        "description": "The email address to use in the simulation (default: 23f2005593@ds.study.iitm.ac.in)"
+                        "description": "The email address to use in the simulation (default: 22f3002640@ds.study.iitm.ac.in)"
                     }
                 },
                 "required": []
